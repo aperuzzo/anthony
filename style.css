@@ -1,0 +1,637 @@
+/*
+Theme Name: Anthony Peruzzo
+Theme URI: http://anthonyperuzzo.com
+Description: A custom theme developed for designer Anthony Peruzzo
+Author: Anthony Peruzzo
+Author URI: http://anthonyperuzzo.com
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+
+*/
+/* font instructions:
+font-family: 'Neucha', cursive;
+*/
+
+@import url('bootstrap/css/bootstrap.min.css'); 
+
+
+@font-face {
+    font-family: 'gravitas';
+    src: url('fonts/gravitasone/gravitasone-webfont.eot');
+    src: url('fonts/gravitasone/gravitasone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gravitasone/gravitasone-webfont.woff2') format('woff2'),
+         url('fonts/gravitasone/gravitasone-webfont.woff') format('woff'),
+         url('fonts/gravitasone/gravitasone-webfont.ttf') format('truetype'),
+         url('fonts/gravitasone/gravitasone-webfont.svg#gravitas_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'yard_saleregular';
+    src: url('fonts/yardsale/yardsale-webfont.eot');
+    src: url('fonts/yardsale/yardsale-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/yardsale/yardsale-webfont.woff2') format('woff2'),
+         url('fonts/yardsale/yardsale-webfont.woff') format('woff'),
+         url('fonts/yardsale/yardsale-webfont.ttf') format('truetype'),
+         url('fonts/yardsale/yardsale-webfont.svg#yard_saleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archisticonormal';
+    src: url('fonts/archistico/Archistico_Simple-webfont.eot');
+    src: url('fonts/archistico/Archistico_Simple-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/archistico/Archistico_Simple-webfont.woff') format('woff'),
+         url('fonts/archistico/Archistico_Simple-webfont.ttf') format('truetype'),
+         url('fonts/archistico/Archistico_Simple-webfont.svg#archisticonormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'social';
+    src: url('fonts/social/social_icons_pro_set_1_-_rounded-webfont.eot');
+    src: url('fonts/social/social_icons_pro_set_1_-_rounded-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/social/social_icons_pro_set_1_-_rounded-webfont.woff2') format('woff2'),
+         url('fonts/social/social_icons_pro_set_1_-_rounded-webfont.woff') format('woff'),
+         url('fonts/social/social_icons_pro_set_1_-_rounded-webfont.ttf') format('truetype'),
+         url('fonts/social/social_icons_pro_set_1_-_rounded-webfont.svg#social_icons_pro_set_1_-_roRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ============================================================
+  GENERAL STYLES
+============================================================ */
+html, body {
+
+height: 100%;
+}
+
+body {
+  padding-top: 40px;
+}
+
+/*.page-wrap {
+  display: table;
+  height: 100%
+}
+
+.block {
+  display: table-row;
+  height: 1px;
+  width: 100%;
+}
+
+.push {
+  height: auto;
+}
+*/
+img {
+    margin: auto;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'yard_saleregular';
+  color: #d0492d;
+  font-size: 28px;
+}
+
+h2 {
+  color: #bdbdbd;
+  font-size: 46px;
+  
+}
+
+h2, h3, h4 {
+  font-family: 'archistico';
+}
+
+p {
+  font-family: 'Neucha';
+  color: #000;
+  font-size: 17px;
+}
+
+li {
+  font-family: 'archistico';
+  
+}
+
+section {
+  padding: 48px 0;
+}
+
+.align-center {
+  text-align: center;
+}
+
+
+/* ============================================================
+  main navigation
+============================================================ */
+.navbar {
+  background-color: #000;
+  font-family: 'gravitas', sans-serif;
+  font-size: 18px;
+}
+
+.navbar li a {
+  color: #fff;
+  text-transform: lowercase;
+  font-family: 'gravitas';
+}
+
+nav li a:hover, li a:focus {
+    color: #d0492d;
+    background-color: #000 !important;
+}
+
+.icon-bar {
+  background-color: #fff;
+}
+
+
+/* ============================================================
+  HEADER STYLE
+============================================================ */
+#anthony {
+  display: none;
+}
+
+header {
+  padding-bottom: 20px;
+}
+
+/* ============================================================
+  WEB SECTION STYLE
+============================================================ */
+#web {
+  background: url('images/slate-sm.jpg');
+}
+
+#outline {
+  border: 5px solid transparent;
+  -webkit-border-image: url('images/outline.png') 25 25 stretch; /* Safari 3.1-5 */
+  -o-border-image: url('images/outline.png') 25 25 stretch; /* Opera 11-12.1 */
+  border-image: url('images/outline.png') 25 25 stretch;
+  margin: -10px 10px;
+
+}
+
+#web h3 {
+  font-size: 20px;
+  color: #bdbdbd;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+ aside li {
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+  font-size: 15px;
+  color: #bdbdbd;
+}
+
+aside ul {
+  padding-left: 0px;
+}
+
+.center-col {
+  margin: auto;
+  max-width: 400px;
+  height: 460px;
+  background: url('images/chalk-mark.svg') no-repeat center center;
+}
+
+.aside-text {
+  padding-top: 55px;
+}
+
+/* ============================================================
+  ILLUSTRATION SECTION STYLE
+============================================================ */
+#illustration {
+  background: url('images/comic.jpg') no-repeat center top;
+  
+}
+
+#illustration h2, #illustration h3 {
+  color: #1ab6d5;
+}
+
+#illustration h2 {
+  margin-bottom: 5px;
+  padding-top: 45px;
+}
+
+#illustration h3 {
+  margin-top: 0px !important;
+  margin-bottom: 40px;
+}
+
+#comic-outline {
+  border: 2px dashed #1ab6d5;
+  padding: 20px 0;
+  margin: 0 1px;
+}
+
+/* ============================================================
+  ABOUT SECTION STYLE
+============================================================ */
+#about-outline {
+  border: 20px solid transparent;
+  -webkit-border-image: url('images/outline-2.png') 20% 20% stretch; /* Safari 3.1-5 */
+  -o-border-image: url('images/outline-2.png') 20% 20% stretch; /* Opera 11-12.1 */
+  border-image: url('images/outline-2.png') 20% 20% stretch;
+  margin: -25px 20px;
+  padding: 20px;
+}
+
+section#about {
+  background: #262626;
+}
+
+section#about h2, section#about p, section#about h3, section#about h4 {
+  color: #fff !important;
+}
+
+#about h2 {
+  border-bottom: 3px solid transparent;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  -webkit-border-image: url('images/outline-2.png') 10% stretch !important; /* Safari 3.1-5 */
+  -o-border-image: url('images/outline-2.png') 10% stretch !important; /* Opera 11-12.1 */
+  border-image: url('images/outline-2.png') 10% stretch !important;
+  width: 200px;
+  margin: auto;
+}
+
+#about-info {
+  padding: 50px 30px 25px 30px;
+}
+
+/* ============================================================
+  comments STYLE
+============================================================ */
+.cell-comments {
+  padding: 25px;
+}
+
+.cell-comments h3 {
+  color: #d0492d !important;
+}
+textarea {
+  width: 100%;
+}
+
+input#submit {
+  background: #d0492d;
+  border: 1px solid #d0492d;
+  padding: 8px;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'archisticonormal';
+}
+
+input#submit:focus, input#submit:hover {
+  background: #fff;
+  border: 1px solid #000;
+  color: #d0492d;
+}
+/* ============================================================
+  thumbnail STYLE
+============================================================ */
+
+
+.thumbnail {
+    border: none;
+    height: 250px;
+}
+
+
+.gallery-item {
+    height: 100%;
+    width: 100%;
+    float: left;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+    .gallery-item:first-child {
+        margin-right: 2.762430939%;
+    }
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-title, .img-title-ill {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /*opacity: 0;*/
+    display: none; /* comment this out for CSS hover */
+    /*transition: all 0.5s ease;*/
+}
+
+.img-title {
+   background: hsla(360, 100%, 100%, 0.92);
+}
+
+.img-title-ill {
+   background: hsla(0, 0%, 19%, 0.7);
+}
+
+.img-title p {
+    position: absolute;
+    color: #303030;
+    top: 120px;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1em;
+    padding: 0 10px;
+
+}
+
+.img-title h1, .img-title-ill h1 {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 30px !important;
+  text-transform: uppercase;
+  padding: 0 10px;
+
+}
+
+.img-title h1 {
+  top: 30px;
+}
+
+.img-title-ill h1 {
+  color: #fff !important;
+  top: 45px;
+}
+
+
+.chalk-circle {
+  background: url('images/small-chalk.svg') no-repeat center;
+}
+
+.blue-outline {
+  background: url('images/blue-outline.svg') no-repeat center;
+}
+
+.thumb {
+    position: relative;
+    width: 250px;
+    height: 199px;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    background-color: #fff;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 90px;
+    overflow: hidden;
+}
+
+.thumb-ill {
+    position: relative;
+    width: 284px;
+    height: 199px;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    background-color: #fff;
+    border: 3px solid #1ab6d5;
+    overflow: hidden;
+}
+
+
+
+img.wp-post-image {
+min-width: 100% !important;
+}
+
+
+
+/* ============================================================
+  single.PHP CONTENT STYLE
+============================================================ */
+section#single h2{
+  color: #d0492d;
+}
+/* ============================================================
+  category.PHP CONTENT STYLE
+============================================================ */
+
+.cell-aside h2 {
+  font-weight: bold;
+  color: #000;
+}
+
+/* ============================================================
+  PAGE-THANK-YOU.PHP STYLE
+============================================================ */
+
+#thanks h1 {
+  font-size: 80px !important;
+  margin-bottom: 10px;
+  padding-top: 100px;
+}
+
+#thanks h3 {
+  padding-bottom: 200px;
+}
+
+/* ============================================================
+  FOOTER STYLE
+============================================================ */
+footer {
+  background-color: #d0492d;
+  padding: 15px 15px 10px 15px !important;
+  
+  
+}
+
+footer h1 {
+  color: #000;
+  font-size: 35px;
+}
+
+footer p, footer h2 {
+  color: #fff;
+}
+
+footer h4 {
+  text-align: center;
+  padding-top: 30px !important;
+}
+
+footer img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#form {
+  padding-top: 40px;
+}
+
+.antispam {
+  display: none;
+}
+
+.form-horizontal .form-group {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* placeholder */
+::-webkit-input-placeholder {
+   color: #edb6ab !important;
+   font-family: 'Neucha';
+   text-transform: uppercase;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #edb6ab !important;
+   font-family: 'Neucha';
+   text-transform: uppercase;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #edb6ab !important;  
+   font-family: 'Neucha';
+   text-transform: uppercase;
+}
+
+:-ms-input-placeholder {  
+   color: #edb6ab !important;
+   font-family: 'Neucha';
+   text-transform: uppercase;  
+}
+
+footer input#submit {
+  background: #000;
+  border: 1px solid #000;
+  padding: 8px;
+  border-radius: 3px;
+  color: #d0492d;
+  font-family: 'archisticonormal';
+}
+
+footer input#submit:focus, footer input#submit:hover {
+  background: #d0492d;
+  border: 1px solid #000;
+  color: #fff;
+}
+
+
+/* ============================================================
+  CUSTOM PAGINATION
+============================================================ */
+
+
+.custom-pagination {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.custom-pagination span,
+.custom-pagination a {
+  display: inline-block;
+  padding: 2px 10px;
+}
+.custom-pagination a {
+  background-color: #d0492d;
+  color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+.custom-pagination a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.custom-pagination span.page-num {
+  margin-right: 10px;
+  padding: 0;
+}
+.custom-pagination span.dots {
+  padding: 0;
+  color: gainsboro;
+}
+.custom-pagination span.current {
+  background-color: #000;
+  color: #d0492d;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+/* ============================================================
+  media queries
+============================================================ */
+
+@media (min-width: 500px) {
+  #outline {
+  border: 10px solid transparent;
+  -webkit-border-image: url('images/outline.png') 25 25 stretch; /* Safari 3.1-5 */
+  -o-border-image: url('images/outline.png') 25 25 stretch; /* Opera 11-12.1 */
+  border-image: url('images/outline.png') 25 25 stretch;
+  margin: -10px 30px;
+  padding: 20px;
+
+}
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+@media (min-height: 950px) {
+  #thanks h1 {
+  font-size: 100px !important;
+  margin-bottom: 10px;
+  padding-top: 200px;
+}
+
+#thanks h3 {
+  padding-bottom: 800px;
+}
+}
