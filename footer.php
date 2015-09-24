@@ -48,7 +48,7 @@
 				
 				mail($to,$email_subject,$email_body,$headers);
 
-				echo "<META http-equiv='refresh' content='0;URL=http://localhost:8888/anthony/thank-you/'>";
+				echo "<META http-equiv='refresh' content='0;URL=http://anthonyperuzzo.com/thank-you/'>";
 	 
 
 		} 

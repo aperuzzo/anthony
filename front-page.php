@@ -31,7 +31,7 @@
 		      echo '<h1>';
 		      echo the_title();
 		      echo '</h1>';
-		      echo the_excerpt();
+		      //echo the_excerpt();
 		      echo '</figcaption>';
 		      echo '</figure>';
 		      echo '</a>';
