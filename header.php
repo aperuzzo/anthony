@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
     <meta property="og:title" content="Anthony Peruzzo: Web Design and Illustration">
@@ -12,8 +15,8 @@
 
     <!-- styles -->
    <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet" type="text/css">
-   <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
-
+   <link href='http://fonts.googleapis.com/css?family=Londrina+Sketch|Londrina+Solid|Neucha' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,9 +25,7 @@
     <?php wp_head(); ?>
 
   </head>
-
   <body>
-
     <nav class="navbar navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">

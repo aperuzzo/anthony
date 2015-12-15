@@ -16,19 +16,21 @@ return $args;
 }
 add_filter( 'wp_page_menu_args', 'home_page_menu_args' );
 
-function wpbootstrap_scripts_with_jquery()
+function registerCustomScripts()
 {
 	// Register the javascript for bootstrap
 	wp_register_script( 'bootstrap-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array( 'jquery' ) );
   //adding custom JS script
   wp_register_script( 'custom-scripts', get_template_directory_uri() . '/js/custom.js', array('jquery'), 1.0, true);
   wp_register_script( 'validation-script', get_template_directory_uri() . '/js/gen_validatorv4.js', array('jquery'), 1.0, true);
-	// For either a plugin or a theme, you can then enqueue the script:
+  wp_register_script( 'modernizr', get_template_directory_uri() . '/js/vendor/modernizr-2.8.3.min.js', array('jquery'), 1.0, true);
+
 	wp_enqueue_script( 'bootstrap-script' );
   wp_enqueue_script('custom-scripts');
   wp_enqueue_script('validation-script');
+  wp_enqueue_script('modernizr');
 }
-add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
+add_action( 'wp_enqueue_scripts', 'registerCustomScripts' );
 
 //add responsive image class for bootstrap
 function img_responsive($content){
@@ -64,14 +66,14 @@ function create_posttype() {
       ),
       'supports' => array(
       	'title',
-		'editor',
-		'author',
-		'thumbnail',
-		'excerpt',
-		'trackbacks',
-		'custom-fields',
-		'comments',
-		'revisions',
+    		'editor',
+    		'author',
+    		'thumbnail',
+    		'excerpt',
+    		'trackbacks',
+    		'custom-fields',
+    		'comments',
+    		'revisions',
       ),
       'taxonomies' => array('category'),
       'public' => true,

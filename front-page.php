@@ -1,13 +1,42 @@
 <?php get_header(); ?>
-<header>
-	<h1>Hello, I'm <span id="anthony">Anthony Peruzzo</span></h1>
-	<img src="<?php echo bloginfo('url'); ?>/wp-content/themes/anthony/images/header-logo.svg" class="img-responsive" alt="Anthony Peruzzo logo">
+ <div id="load-wrap">
+  <div id="cir-outer">
+    <div id="cir">
+      <img src="<?php echo bloginfo('url'); ?>/wp-content/themes/anthony/images/skull.svg" alt="loading graphic">
+    </div>
+  </div>
+</div>
+<header class="row">
+	<div class="contain">
+		<div id="mainLogo">
+			<div id="badge">
+				<h1>Hello, I'm</h1>
+				<h1 id="anthony">Anthony Peruzzo</h1>
+				<img src="<?php echo bloginfo('url'); ?>/wp-content/themes/anthony/images/header-logo.svg" class="img-responsive" alt="Anthony Peruzzo logo">
+				<h2>I'm an Artist and Web Developer</h2>
+			</div>
+
+			<div id="dn">
+				<h3>my work</h3>
+				<div id="dnBtn">
+					<i class="fa fa-arrow-circle-down"></i>
+				</div>
+			</div>
+		</div>
+		
+		<ul id="slideshow">
+			<li id="picture-1" class="current"></li>
+			<li id="picture-2"></li>
+			<li id="picture-3"></li>
+			<li id="picture-4"></li>
+		</ul>
+	</div>
 </header>
 <section id="web" class="row">
 	<article id="outline" class="row"> 
 	
-		<h2>I'm a Web Designer/ Developer</h2>
-		<h3>check out my websites</h3>
+		<h2>Take a look at my Sites</h2>
+		<h3>I designed and developed them all</h3>
 		<div class="col-lg-8">
 		<!-- thumbs of images on left custom post type title?-->
 			<?php
@@ -20,7 +49,7 @@
 		    $loop = new WP_Query( $args );
 		    while ( $loop->have_posts() ) : $loop->the_post();
 		      
-		      echo '<div class="col-sm-6 thumbnail chalk-circle">';
+		      echo '<div class="col-md-6 thumbnail chalk-circle">';
 		      echo '<div class="thumb clearfix">';
 		      echo '<a href="';
 		      echo the_permalink();
@@ -31,7 +60,6 @@
 		      echo '<h1>';
 		      echo the_title();
 		      echo '</h1>';
-		      //echo the_excerpt();
 		      echo '</figcaption>';
 		      echo '</figure>';
 		      echo '</a>';
@@ -44,15 +72,14 @@
 		<div class="clearfix visible-sm-block visible-md-block"></div>
 		<aside class="col-lg-4 center-col">
 			<div class='aside-text'>
-			<h3>MY SKILLS</h3>
-			<ul>
-				<li>HTML/CSS</li>
-				<li>Javascript/JQUERY</li>
-				<li>wordpress</li>
-				<li>responsive design</li>
-				<li>Adobe Creative Suite</li>
-			</ul>
-			<!--<img src="<?php echo bloginfo('url'); ?>/wp-content/themes/anthony/images/mug-brush.svg" class="center-block"> -->
+				<h3>My Skills</h3>
+				<ul>
+					<li>HTML/CSS</li>
+					<li>Javascript/JQUERY</li>
+					<li>Wordpress</li>
+					<li>Responsive Design</li>
+					<li>Adobe Creative Suite</li>
+				</ul>
 			</div>
 		</aside>
 	</article>
@@ -97,17 +124,15 @@
 		</div>
 	</div>	
 		
-	
-
 </section>
 <section id="about" class="row">
 	<div id='about-outline' class="row">
 		<h2>About</h2>
 		<div class="col-sm-6" id="about-info">
-			<p>Anthony Peruzzo is an Artist and Web Developer currently residing in Minneapolis, MN. He has created websites for
-				Ace in 1 Media, The Griffin Gallery, artist John Bivens and many more. He is a published artist of graphic novels
-				(predominately through publisher Image Comics). He also has a freelance design and illustration practice. Past 
-				clients include: Charter Media, Make Westing (pub in Oakland, CA), Black Box TV, and many private individuals.</p>
+			<p>Anthony Peruzzo is an Artist and Web Developer currently residing in Minneapolis, MN.</p> 
+			<p>He has created websites for Ace in 1 Media, The Griffin Gallery, artist John Bivens and many more.</p> 
+			<p>He is a published artist of graphic novels (predominately through publisher Image Comics) and has a freelance design and illustration practice. Past 
+			clients include: Charter Media, Make Westing (pub in Oakland, CA), Black Box TV, and many private individuals.</p>
 			<p>Please use the contact form to inquire for services.</p>
 		</div>
 		<div class="col-sm-6">

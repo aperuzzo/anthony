@@ -12,8 +12,6 @@ Template Name: Comic Page
 </div><!-- end row -->
 <div class="row">
   <?php
-
-
   $args = array( 'post_type' => 'comicpage');
   $loop = new WP_Query( $args );
   while ( $loop->have_posts() ) : $loop->the_post();
@@ -34,9 +32,6 @@ Template Name: Comic Page
       echo '</div>';
     endif;
   endwhile;
-
-
-
   ?>
   <!--
   <?php query_posts('category_name'); ?>
